@@ -1,7 +1,7 @@
 function Login() {
   return (
     <>
-      <form>
+      <form class="formulario">
         <input type="text" placeholder="Correo electrónico"></input>
         <input type="text" placeholder="Contraseña"></input>
         <button>Acceder</button>
