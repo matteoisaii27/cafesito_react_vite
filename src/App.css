@@ -92,3 +92,63 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  padding: 0 20px;
+}
+
+.login-card h1 {
+  color: #f0f9ff;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.login-card input:focus {
+  box-shadow: 0 0 6px #2563eb;
+}
+
+.login-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.login-card button:hover {
+  background: #2563eb;
+}
+
+
+.pokedex-container{
+  display:flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}

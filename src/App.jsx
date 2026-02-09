@@ -1,8 +1,13 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { useRef, useEffect, useState } from 'react'
 import mapboxgl from 'mapbox-gl'
 
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './App.css'
+
+import Login from './pages/Login'
+import Pokedex from './pages/Pokedex'
+
 
 import Dashboard from './components/Dashboard'
 import Quotes from './components/Quotes'
@@ -12,6 +17,18 @@ const INITIAL_CENTER = [-86.8515, 21.1619]
 const INITIAL_ZOOM = 12
 
 function App() {
+
+  return(
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login />} />
+            <Route path="/pokedex" element={<Pokedex />} />
+                  <Route path="*" element={<Navigate to="/" />} />
+
+
+    </Routes>
+    </BrowserRouter>
+  )
 
   const handleButtonClick = () => {
   mapRef.current.flyTo({
